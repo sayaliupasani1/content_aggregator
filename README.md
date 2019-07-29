@@ -1,19 +1,37 @@
-Basic idea of this repo: This repo includes a python based application code, which can scrape news from specified websites and display it in a aggregated way.
+### Basic idea of this repo: 
+
+This repo includes a python based application code, which can scrape news from specified websites and display it in a aggregated way.
 
 This was mainly initiated since we plan to use this in our home automation system wherein we would like to view the relevant news highlights from multiple sites on a home tab.
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+---
 
-The code makes use of 3 main python modules:
 
-1) Flask to serve a webpage
-2) requests to access the specified website and get the page contents
-3) BeautifulSoup using which we can scrape desired content from the available data.
+### Python modules used:
 
-To run, you can simply execute the app.py file. You will need to have a template that will be rendered inorder to serve your scrapped data in specified manner.
+>-  Flask to serve a webpage
+>-  requests to access the specified website and get the page contents
+>-  BeautifulSoup using which we can scrape desired content from the available data.
+
+---
+
+### How to run?
+
+To run the app, you simply execute the .py file as: `python aggr.py`
+
+The app by default starts listening on port 5000. You should see below results in running the py file:
+
+![](images/run.png)
+
+The served webpage looks like below (You can edit templates/page.html page to edit the looks of your served page):
+
+![](images/webpage.png)
 
 Note: This code involves scraping for a specific news website. Based on the website of your choice, you might need to employ slightly different logic and bs4 attributes in order to scrape desired content.
 
+---
+
+### Further plans:
 This repo is still in progress as I plan to add following:
 
 1) Few more websites to scrape the news update from.
