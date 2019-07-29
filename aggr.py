@@ -31,7 +31,7 @@ class vicnews:
 def get_news():
 	news=vicnews("https://vicnews.com")
 	news.news_page()
-	return render_template('page.html', topic=news.topic, story_link=news.story_link, latest_link=news.dict)
+	return render_template('page.html', topic=news.topic, story_link=news.story_link, latest_link='Further latest news links coming up')
 
 if __name__=='__main__':
 	app.run(host='0.0.0.0')
